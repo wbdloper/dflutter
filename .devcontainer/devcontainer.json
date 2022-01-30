@@ -1,0 +1,72 @@
+{
+  "name": "dflutter",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "remoteUser": "developer",
+  // "mounts": ["source=/dev/bus/usb,target=/dev/bus/usb,type=bind"],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/usr/bin/flatpak-spawn",
+        "args": ["--host","--env=TERM=xterm-256color","bash"]
+      },
+      "zsh": {
+        "path": "/usr/bin/flatpak-spawn",
+        "args": ["--host","zsh"]
+      },
+      "fish": {
+        "path": "fish"
+      },
+      "tmux": {
+        "path": "tmux",
+        "icon": "terminal-tmux"
+      },
+      "pwsh": {
+        "path": "pwsh",
+        "icon": "terminal-powershell"
+      }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "bracket-pair-colorizer-2.colors": [
+        "#fafafa",
+        "#9F51B6",
+        "#f4ff14",
+        "#F07850",
+        "#9CDD29",
+        "#C497D4"
+    ],
+    "editor.fontFamily": "'Lotion Regular'",
+    "dart.devToolsBrowser": "default",
+    "editor.fontSize": 16,
+    // Opciones para dart
+    "debug.openDebug": "openOnDebugBreak",
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.rulers": [80],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false,
+    },
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  },
+  "runArgs": [
+    "--privileged"
+  ],
+  "extensions": [
+    "dart-code.flutter",
+    "dart-code.dart-code",
+    "visualstudioexptteam.vscodeintellicode",
+    "rangav.vscode-thunder-client",
+    "get-snippets.get-snippets",
+    "nash.awesome-flutter-snippets",
+    "coenraads.bracket-pair-colorizer-2"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/developer/workspace,type=bind,consistency=delegated",
+  "workspaceFolder": "/home/developer/workspace"
+}
