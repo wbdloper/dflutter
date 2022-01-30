@@ -10,17 +10,9 @@
       "bash": {
         "path": "/usr/bin/flatpak-spawn",
         "args": ["--host","--env=TERM=xterm-256color","bash"]
-      }     
+      }
     },
     "workbench.iconTheme": "material-icon-theme",
-    "bracket-pair-colorizer-2.colors": [
-        "#fafafa",
-        "#9F51B6",
-        "#f4ff14",
-        "#F07850",
-        "#9CDD29",
-        "#C497D4"
-    ],
     "editor.fontFamily": "'Lotion Regular'",
     "dart.devToolsBrowser": "default",
     "editor.fontSize": 16,
@@ -39,18 +31,17 @@
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
   },
-  "runArgs": [
-    "--privileged"
-  ],
+  "runArgs": ["--privileged"],
   "extensions": [
     "dart-code.flutter",
     "dart-code.dart-code",
     "visualstudioexptteam.vscodeintellicode",
     "rangav.vscode-thunder-client",
     "get-snippets.get-snippets",
-    "nash.awesome-flutter-snippets",
-    "coenraads.bracket-pair-colorizer-2"
+    "nash.awesome-flutter-snippets"
   ],
   "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/developer/workspace,type=bind,consistency=delegated",
   "workspaceFolder": "/home/developer/workspace"
