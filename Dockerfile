@@ -1,6 +1,3 @@
-# Hola, este es mi custom Dockerfile para tener todas las herramientas necesarias para crear aplicaciones Flutter. 
-# wbdloper
-
 # OS System
 FROM debian:bullseye
 
