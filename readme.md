@@ -6,10 +6,8 @@ Este repositorio crea una imagen [Docker](https://hub.docker.com/r/wbdloper/dflu
  
 |  |  |
 | -- | -- |
-| **Sistema operativo** | [Debian](https://hub.docker.com/_/debian/)|
-| **Android nivel de API** | Android 11 (API 30) |
-| **Web** | Permite el uso **Google Chrome** para ejecutar aplicaciones de Flutter Web |
-| **Desktop** | Permite ejecutar aplicaciones para **Flutter Desktop** |
+| **Sistema operativo** | [Ubuntu](https://hub.docker.com/_/ubuntu)|
+| **Android nivel de API** | Android 11 (API 31) |
 | **Flutter versión** | Ultima versión disponible en el [canal estable](https://docs.flutter.dev/development/tools/sdk/releases#:~:text=Stable%20channel%20(Windows)) |
 
 ## Conexión TCP/IP para dispositivos físicos (Opcional)
