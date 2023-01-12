@@ -7,7 +7,7 @@ Este repositorio crea una imagen [Docker](https://hub.docker.com/r/wbdloper/dflu
 |  |  |
 | -- | -- |
 | **Sistema operativo** | [Ubuntu](https://hub.docker.com/_/ubuntu)|
-| **Android nivel de API** | Android 11 (API 31) |
+| **Android nivel de API** | Android 12 (API 31) |
 | **Flutter versión** | Ultima versión disponible en el [canal estable](https://docs.flutter.dev/development/tools/sdk/releases#:~:text=Stable%20channel%20(Windows)) |
 
 ## Conexión TCP/IP para dispositivos físicos (Opcional)
